@@ -20,7 +20,7 @@ function playRound (playerSelection, computerSelection) {
     console.log("Computer: " + computer);
 
     if (player == computer) {
-        console.log("It's a Tie!");
+        console.log("It's a Tie! No Points Given.");
     } else if (player == "rock") {
        if (computer == "paper") {
             console.log("You Lost! Paper beats Rock");
@@ -45,7 +45,9 @@ function playRound (playerSelection, computerSelection) {
             console.log("You Won! Paper beats Rock");
             return player;
         }
-     } 
+     } else {
+         console.log("Something Went Wrong. Reload the Page.");
+     }
     
 }
 
@@ -67,13 +69,19 @@ function game() {
 
      
      if (playerScore > computerScore) {
-         result = "Congratulations! Player Won the Match! Points: " + playerScore;
+         result = "Congratulations! Player Won the Match!" +
+        "\nPlayer Score: " + playerScore +
+        "\nComputer Score: " + computerScore;
          return result;
      } else if (playerScore < computerScore) {
-         result = "Sorry! Computer Won the Match! Points: " + computerScore;
+         result = "Sorry! Computer Won the Match!" +
+         "\nPlayer Score: " + playerScore +
+         "\nComputer Score: " + computerScore;
          return result;
      } else if (playerScore == computerScore) {
-         result = "It's a Tie!"
+         result = "It's a Tie!" +
+         "\nPlayer Score: " + playerScore +
+         "\nComputer Score: " + computerScore;
          return result;
      }
 } 
