@@ -4,12 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissors 1.0</title>
+    <title>Rock-Paper-Scissors 1.2</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
 </head>
 <body>
-    <script src="script.js">
-        
-    </script>
+    <div class="header">
+        <h1>Rock - Paper - Scissors</h1>
+    </div>
+
+    <div class="scoreboard">
+        <h2 class="round-details" id="roundDetails"> First to 5 Points Wins </h2>
+        <h1 class="score-status" id="scoreStatus"> Pick to Begin: </h1>
+        <div class="score-container">
+            <div class="round-choice">
+                <div class="symbol" id="playerSymbol">❔</div>
+                <p class="score" id="playerScore">Player: 0</p>
+            </div>
+            <div class="round-choice">
+                <div class="symbol" id="computerSymbol">❔</div>
+                <p class="score" id="computerScore">Computer: 0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="choices">
+        <div class="choice-container">
+            <button class="choice" id="rock">
+                <img src="./images/rock.png" alt="rock"> <br>
+                <span class="text">Rock</span>
+            </button>
+            <button class="choice" id="paper">
+                <img src="./images/paper.png" alt="paper"> <br>
+                <span class="text">Paper</span>
+            </button>
+            <button class="choice" id="scissors">
+                <img src="./images/scissors.png" alt="scissors"> <br>
+                <span class="text">Scissors</span>
+            </button> 
+        </div> 
+    </div>
+
+    <div class ="modal">
+        <div class="modal-container">
+            <p class="game-result">GG WP!</p>
+        </div>
+
+        <button class="modal-btn"> Play Again </button>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="footer"> 
+        <h1>Copyright © Christer John Esguerra 2022</h1>
+    </div>
 </body>
 </html>
