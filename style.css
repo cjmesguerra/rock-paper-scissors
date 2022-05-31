@@ -18,6 +18,15 @@ body {
     color: #f9faf8;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Game Status and Scoreboard */
 .scoreboard {
     text-align: center;
     background-color: #e5e7eb;
@@ -40,6 +49,8 @@ img {
     height: 100px;
     margin-bottom: 24px;
 }
+
+/* R-S-P Choices */
 
 .choices {
     display: flex;
